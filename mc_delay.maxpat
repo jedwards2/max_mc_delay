@@ -40,6 +40,42 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"basictuning" : 440,
+					"data" : 					{
+						"clips" : [ 							{
+								"absolutepath" : "choir_amen.wav",
+								"filename" : "choir_amen.wav",
+								"filekind" : "audiofile",
+								"id" : "u407007602",
+								"loop" : 1,
+								"content_state" : 								{
+									"loop" : 1
+								}
+
+							}
+ ]
+					}
+,
+					"followglobaltempo" : 0,
+					"formantcorrection" : 0,
+					"id" : "obj-2",
+					"maxclass" : "playlist~",
+					"mode" : "basic",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"originallength" : [ 0.0, "ticks" ],
+					"originaltempo" : 120.0,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 205.0, 204.0, 150.0, 30.0 ],
+					"pitchcorrection" : 0,
+					"quality" : "basic",
+					"timestretch" : [ 0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -234,42 +270,6 @@
 			}
 , 			{
 				"box" : 				{
-					"basictuning" : 440,
-					"data" : 					{
-						"clips" : [ 							{
-								"absolutepath" : "2d.wave-4x.wav",
-								"filename" : "2d.wave-4x.wav",
-								"filekind" : "audiofile",
-								"id" : "u989009305",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
- ]
-					}
-,
-					"followglobaltempo" : 0,
-					"formantcorrection" : 0,
-					"id" : "obj-15",
-					"maxclass" : "playlist~",
-					"mode" : "basic",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"originallength" : [ 0.0, "ticks" ],
-					"originaltempo" : 120.0,
-					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 209.0, 183.0, 150.0, 30.0 ],
-					"pitchcorrection" : 0,
-					"quality" : "basic",
-					"timestretch" : [ 0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -365,7 +365,7 @@
 							"isbase64" : 1,
 							"sliderorder" : [  ],
 							"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-							"blob" : "1071.VMjLgXBA...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9bCM33hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtfjKvXTR5AkaA4hKtfjch0TQwHlKDAUPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKBYWZUMTRSgjLG4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcoU0Y2YjVmcmQgcVSUMlcUwlXyUTLhk2ZrM1ZAIjXxUkLY8FMrU0ZIIiXugCaggCRRwDcTk1R1gjPHYWRWkUdUYzXNUjUgsFLogzTAcEVoUkURkWTEo0ZAUTXm0jUYglKRM0amc0Sn4RZKcGTC0DdLMjS3I1PNgGVS4jLXkWSyfjPHQTUFE1YqICUzPSLXgCRBwDcHMUSn4hPQs1cVgEMznWX5UkUOglKosDdTkFRlAEUYIWQVQVYvnmX3fjPLQmY4wDMpMkSznVdMkmX40TdpMUSwvTZHYFTTkkbEYEYWUDahYGLogjcyfVS3g0TNQiZS4jLPkFSv3RdMQCSS0DZtfGTxUkUXgGLogzcyHDSn4BZQsVUFkEZEECVwASZHY2Ln0zLTMDS14xPLYGR4wzLPMESyP0PNglKBE0ZzDiXuE0UjgCRRwDctjFRlIVUZoVTGoENHIESz4RZHYlc5ElLMQ0X5ASZHY2LBwDZtHjTuMlQZMTUGMFNHIESz4RZHYld5ElZIUEV5UkUOglKosDdlkFSzn1TNQiZowTdhMDSw3xTMACRBgTS3XTVDUkQho2YV8DZtj1RvfjPH0DNFk0ZvjFR1MCZLYmY4wTdLkGS3YVdLECVowjLpkVSn4BZTsVSWkEdYcUVpUzTOglKosjcHIDRRUULhsVRsM1ZQwFS3fjPLQmKogjYHUUV4UEahESUFkUd5kFR1MiPLglKnQ0ZMcUV3k0UYoVTS8DZtj1R1gjPHM2ZFQFS3DCVwASZHYGRBgDLqESUuEkQi4FLogzLHMDSn4hTi81YTk0aiYjV5ASZHoGSS0DZ2f1St3hKt3hKt3hKt3hKJUELPUTPqI1aYcEV5UkQQcVTWgkKDAkKBs1QhcVSxHlKDAkKC4BTG4hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C."
+							"blob" : "1051.VMjLgHAA...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9byLy3hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtfDT2YTR5AkaA4hKtfjch0TQwHlKDAUPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKBoGZUMTRSgjaG4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcoU0Y2YjVmcmQgcVSUMlcUwlXyUTLhk2ZrM1ZAIjXxUkLY8FMrU0ZIIiXugCaggCRRwDcTk1R1gjPHYWRWkUdUYzXNUjUgsFLogzTAcEVoUkURkWTEo0ZAUTXm0jUYglKRM0amc0SnQTZKYGRBgDQUYTXmslLTQCMwfENHIDSzgzTMglKBE0Z2YEVzPidgoWUV8DZtj1R3QUZHYFTTkkbEYEYkAidhgCRBwDclkGSzn1TNQiZ40TdhkWS4o1TMECSogjYPQUVxUjUjcUQrIlcvjFR1MCZMgGVS4DMpMkSx.UZLAiK40DMLMUSn4BdPIWUVgEdvjFR2MiPLglKnE0ZUYTVnUTLXEGLogjcyfVSyP0PLYmKCwjcHkGSy.0TLMCUC4DZtHTTqQSLh8VTWQFNHIESz4RZHYlXUokZQcjV3fjTLQmKogjY1oWXxzDUioGLogjcyHDSn4hPR81XFo0PUczX3fjTLQmKogjY5oWXpkTUXoWUV8DZtj1R3YVZLQiZS4DMpkFS4I1PLEiKS0DLHIDRMgiQYQTUFIldmY0Sn4RZKACRBgTS3XTVqASZHY2LnwjclkGS4wTdLgmY4wTLXkFSxnVZMglKnQ0ZMcUV3k0UYoVQS8DZtj1R1gjPHIUUwH1ZI01XqEEaLgCRBwDctjFRlgTUYkWUrIVLUYTV4oWZHY2LBwDZtfFUq0zUYgWVWkkZQM0Sn4RZKYGRBgzbqYDYLgSLXEGLogjcHIDRvrVLU8VTFMlavjFRyfzPLglKRM1amQUVuMlQZoGLogjdLMUSncCZO4hKt3hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEVtPDTtHzZGI1YMIiXtPDTtLjKPcjKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 						}
 ,
 						"snapshotlist" : 						{
@@ -389,7 +389,7 @@
 										"isbase64" : 1,
 										"sliderorder" : [  ],
 										"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-										"blob" : "1071.VMjLgXBA...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9bCM33hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtfjKvXTR5AkaA4hKtfjch0TQwHlKDAUPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKBYWZUMTRSgjLG4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcoU0Y2YjVmcmQgcVSUMlcUwlXyUTLhk2ZrM1ZAIjXxUkLY8FMrU0ZIIiXugCaggCRRwDcTk1R1gjPHYWRWkUdUYzXNUjUgsFLogzTAcEVoUkURkWTEo0ZAUTXm0jUYglKRM0amc0Sn4RZKcGTC0DdLMjS3I1PNgGVS4jLXkWSyfjPHQTUFE1YqICUzPSLXgCRBwDcHMUSn4hPQs1cVgEMznWX5UkUOglKosDdTkFRlAEUYIWQVQVYvnmX3fjPLQmY4wDMpMkSznVdMkmX40TdpMUSwvTZHYFTTkkbEYEYWUDahYGLogjcyfVS3g0TNQiZS4jLPkFSv3RdMQCSS0DZtfGTxUkUXgGLogzcyHDSn4BZQsVUFkEZEECVwASZHY2Ln0zLTMDS14xPLYGR4wzLPMESyP0PNglKBE0ZzDiXuE0UjgCRRwDctjFRlIVUZoVTGoENHIESz4RZHYlc5ElLMQ0X5ASZHY2LBwDZtHjTuMlQZMTUGMFNHIESz4RZHYld5ElZIUEV5UkUOglKosDdlkFSzn1TNQiZowTdhMDSw3xTMACRBgTS3XTVDUkQho2YV8DZtj1RvfjPH0DNFk0ZvjFR1MCZLYmY4wTdLkGS3YVdLECVowjLpkVSn4BZTsVSWkEdYcUVpUzTOglKosjcHIDRRUULhsVRsM1ZQwFS3fjPLQmKogjYHUUV4UEahESUFkUd5kFR1MiPLglKnQ0ZMcUV3k0UYoVTS8DZtj1R1gjPHM2ZFQFS3DCVwASZHYGRBgDLqESUuEkQi4FLogzLHMDSn4hTi81YTk0aiYjV5ASZHoGSS0DZ2f1St3hKt3hKt3hKt3hKJUELPUTPqI1aYcEV5UkQQcVTWgkKDAkKBs1QhcVSxHlKDAkKC4BTG4hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C."
+										"blob" : "1051.VMjLgHAA...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9byLy3hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtfDT2YTR5AkaA4hKtfjch0TQwHlKDAUPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKBoGZUMTRSgjaG4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcoU0Y2YjVmcmQgcVSUMlcUwlXyUTLhk2ZrM1ZAIjXxUkLY8FMrU0ZIIiXugCaggCRRwDcTk1R1gjPHYWRWkUdUYzXNUjUgsFLogzTAcEVoUkURkWTEo0ZAUTXm0jUYglKRM0amc0SnQTZKYGRBgDQUYTXmslLTQCMwfENHIDSzgzTMglKBE0Z2YEVzPidgoWUV8DZtj1R3QUZHYFTTkkbEYEYkAidhgCRBwDclkGSzn1TNQiZ40TdhkWS4o1TMECSogjYPQUVxUjUjcUQrIlcvjFR1MCZMgGVS4DMpMkSx.UZLAiK40DMLMUSn4BdPIWUVgEdvjFR2MiPLglKnE0ZUYTVnUTLXEGLogjcyfVSyP0PLYmKCwjcHkGSy.0TLMCUC4DZtHTTqQSLh8VTWQFNHIESz4RZHYlXUokZQcjV3fjTLQmKogjY1oWXxzDUioGLogjcyHDSn4hPR81XFo0PUczX3fjTLQmKogjY5oWXpkTUXoWUV8DZtj1R3YVZLQiZS4DMpkFS4I1PLEiKS0DLHIDRMgiQYQTUFIldmY0Sn4RZKACRBgTS3XTVqASZHY2LnwjclkGS4wTdLgmY4wTLXkFSxnVZMglKnQ0ZMcUV3k0UYoVQS8DZtj1R1gjPHIUUwH1ZI01XqEEaLgCRBwDctjFRlgTUYkWUrIVLUYTV4oWZHY2LBwDZtfFUq0zUYgWVWkkZQM0Sn4RZKYGRBgzbqYDYLgSLXEGLogjcHIDRvrVLU8VTFMlavjFRyfzPLglKRM1amQUVuMlQZoGLogjdLMUSncCZO4hKt3hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEVtPDTtHzZGI1YMIiXtPDTtLjKPcjKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 									}
 ,
 									"fileref" : 									{
@@ -439,13 +439,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
@@ -469,6 +462,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -639,16 +639,17 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "2d.wave-4x.wav",
-				"bootpath" : "C74:/help/msp",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "ValhallaSupermassive.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../Snapshots",
 				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "choir_amen.wav",
+				"bootpath" : "~/Documents/Max 8/personal/Samples",
+				"patcherrelativepath" : "../../Samples",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
  ],
